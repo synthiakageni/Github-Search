@@ -1,6 +1,6 @@
 # Project-Name
 GITHUB SEARCH
-
+This is an application that allows the user to search for a github account by using either the github username or the email address.
 
 ## Technologies Used
 
@@ -17,9 +17,9 @@ To run the app in your machine or server,use the following steps:
 prerequisite
 1.A text editor preferably visual studio code.
 
-git clone the repo git clone https://github.com/synthiakageni/Github-Search.git
-cd "Github-Search"
-code .
+- git clone the repo git clone https://github.com/synthiakageni/Github-Search.git
+- cd "Github-Search"
+- code .
 
 
 
