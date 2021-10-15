@@ -13,12 +13,27 @@
 <div class="col-md 7">
     <div class="card" style="width:500px">
         <div class="card-img-overlay">
-          <h4 class="card-title">name</h4>
-          <p class="card-text">number of repositories.</p>
+          <h4 class="card-title">Name:{{ users.name | titlecase }} {{ users. login | titlecase}}  </h4>
+          <p class="card-text">number of repositories:{{ users.public_repository  }}</p>
           <a href="#" class="btn btn-primary">view repositories</a>
         </div>
       </div>
     </div> 
+
+    <div class="row">
+    <div class="card bg-light mb-3"  style="max-width: 18rem;" *ngFor = 'let repo of Repos.newRepository' >
+        <div class="card-header" style="font-weight: bold;">Repository Name: {{ repository.name | titlecase }} </div>
+        <div class="card-body">
+            <a type="button" class="btn btn-success btn-sm" href="{{repository.html_url}}" target="_blank" id="btl">Github Link </a>
+          <p class="card-text" id="bb"> Description:</p> {{ repository.description }} 
+
+            Date Created: 
+          </div>
+          <p class="card-text" id="dd">{{ repository.created_on | date}} </p>
+        </div>
+      </div>
+
+</div>
 </div>
 </div>
 
