@@ -1,23 +1,24 @@
 <div class="container"> 
-<form class="form-inline" action="/action_page.php">
-    
-    <div class="form-group">
-      <label for="username">Username:</label>
-      <input type="text" class="form-control" id="username">
+<div class="row">
+    <div class="col-md-5">
+      <div class="card">
+        <form action="/action_page.php">
+              <label for="username">Username:</label>
+              <input type="text" class="form-control" placeholder="Enter Username" id="username">
+            <button type="submit" class="btn btn-success btn-sm">Submit</button>
+        
+            </form>
+      </div>
     </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-
-
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-    <div class="card-body">
-      <h4 class="card-title">name</h4>
-      <p class="card-text">number of repositorie.</p>
-      <a href="#" class="btn btn-primary">view repositories</a>
-    </div>
-  </div>
+<div class="col-md 7">
+    <div class="card" style="width:500px">
+        <div class="card-img-overlay">
+          <h4 class="card-title">name</h4>
+          <p class="card-text">number of repositories.</p>
+          <a href="#" class="btn btn-primary">view repositories</a>
+        </div>
+      </div>
+    </div> 
 </div>
+</div>
+
