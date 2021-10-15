@@ -1,7 +1,7 @@
 ### Project-Name
 GITHUB SEARCH
 ### Description
-This is an application that allows the user to search for a github account by using either the github username or the email address.
+This is an application that allows the user to search for a github account by using  the github username and view the repositories available.
 
 ### Author
 <a href="https://github.com/synthiakageni"> SYNTHIA KAGENI</a>
