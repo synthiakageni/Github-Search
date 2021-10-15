@@ -1,1 +1,6 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+.card{
+    margin-left: 3px;
+    margin-right: 40pc;
+    background-color:gainsboro;
+}
