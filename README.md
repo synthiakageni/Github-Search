@@ -1,8 +1,13 @@
-# Project-Name
+### Project-Name
 GITHUB SEARCH
+### Description
 This is an application that allows the user to search for a github account by using either the github username or the email address.
 
-## Technologies Used
+### Author
+<a href="https://github.com/synthiakageni"> SYNTHIA KAGENI</a>
+
+
+### Technologies Used
 
 - HTML
 - CSS
@@ -36,7 +41,7 @@ To fix a bug or enhance an existing module, follow these steps:
 - Push to the branch (git push origin improve-feature)
 - Create a Pull Request
 
-
+## [Live link]()
 ## Known Bugs
 
 There are no known bugs.
