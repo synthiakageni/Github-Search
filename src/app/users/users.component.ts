@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import{Users} from '../users';
 import {  UserService } from "../user-service";
 import{Repository} from '../repository';
-import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -14,13 +14,18 @@ export class UsersComponent implements OnInit {
   repository:any=Repository;
   
 
-  constructor(private userService:  UserService, public repos: UserService) { }
+  constructor(private userService:  UserService, public myRepository: UserService) { }
 
   ngOnInit(): void {}
 
-    Search(username: string){
+    doSearch(username: string){
+      console.log(username)
+      console.log( this.myRepository.getRepo(username))
+      this.myRepository.newRepository;
+      console.log(this.myRepository.getRepo(username))
       this.userService.getUsers(username);
-      this.repos.getRepo(username);
+     this.repository= this.myRepository.getRepo(username);
+     console.log(this.repository)
       this.users = this.userService.users;
      this.ngOnInit();
        }
