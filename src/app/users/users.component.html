@@ -1,39 +1,42 @@
-<div class="container"> 
-<div class="row">
+<div class="container">
+  <ng-progress></ng-progress>
+  <div class="row">
     <div class="col-md-5">
       <div class="card">
         <form action="/action_page.php">
-              <label for="username">Username:</label>
-              <input type="text" class="form-control" placeholder="Enter Username" id="username" #Search>
-            <button type="submit" class="btn btn-success btn-sm" (click) = "Search(search.value)">Submit</button>
-        
-            </form>
+          <label for="username">Username:</label>
+          <input type="text" class="form-control" placeholder="Enter Username" id="username" #Search>
+          <button type="submit" class="btn btn-success btn-sm" (click)="doSearch(Search.value)">Submit</button>
+
+        </form>
       </div>
     </div>
-<div class="col-md 7">
-    <div class="card" style="width:500px">
+    <div class="col-md 7">
+      <div class="card" style="width:500px">
         <div class="card-img-overlay">
-          <h4 class="card-title">Name:{{ users.name | titlecase }} {{ users. login | titlecase}}  </h4>
-          <p class="card-text">number of repositories:{{ users.public_repository  }}</p>
-          <a href="#" class="btn btn-primary">view repositories</a>
+          <h4 class="card-title">Name:{{ users.name | titlecase }} {{ users. login | titlecase}} </h4>
+          <p class="card-text">number of repositories:{{ users.public_repos }}</p>
         </div>
       </div>
-    </div> 
-
+    </div>
     <div class="row">
-    <div class="card bg-light mb-3"  style="max-width: 18rem;" *ngFor = 'let repo of Repos.newRepository' >
-        <div class="card-header" style="font-weight: bold;">Repository Name: {{ repository.name | titlecase }} </div>
-        <div class="card-body">
-            <a type="button" class="btn btn-success btn-sm" href="{{repository.html_url}}" target="_blank" id="btl">Github Link </a>
-          <p class="card-text" id="bb"> Description:</p> {{ repository.description }} 
 
-            Date Created: 
+    </div>
+    <div class="row">
+      <div class="col-md-3" *ngFor='let repo of myRepository.newRepository'>
+        
+        <div class="card bg-light mb-3 p-2"  style="max-width: 18rem;" >
+          <div class="card-header" style="font-weight: bold;">Repository Name: {{ repo.full_name| titlecase }} </div>
+          <div class="card-body">
+            <a type="button" class="btn btn-success btn-sm" href="{{repo.html_url}}" target="_blank">Github Link </a>
+            <p class="card-text"> Description:</p> {{ repo.description }}
+
+            Date Created:
+            <p class="card-text text">{{ repo.created_at | date}} </p>
           </div>
-          <p class="card-text" id="dd">{{ repository.created_on | date}} </p>
+          
         </div>
       </div>
-
+    </div>
+  </div>
 </div>
-</div>
-</div>
-
