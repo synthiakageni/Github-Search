@@ -50,7 +50,7 @@ export class UserService {
             description: string;
             created_on: Date;
             login: string;
-            public_repository: number;
+            public_repo: number;
             
            
      }
