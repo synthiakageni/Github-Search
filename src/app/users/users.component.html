@@ -29,10 +29,11 @@
           <div class="card-header" style="font-weight: bold;">Repository Name: {{ repo.full_name| titlecase }} </div>
           <div class="card-body">
             <a type="button" class="btn btn-success btn-sm" href="{{repo.html_url}}" target="_blank">Github Link </a>
-            <p class="card-text"> Description:</p> {{ repo.description }}
-
-            Date Created:
-            <p class="card-text text">{{ repo.created_at | date}} </p>
+            <div class="des"> 
+            <p class="card-text " style="color:aqua;"> Description:</p> {{ repo.description }}
+          </div>
+           
+            <p class="card-text text" style="color:aqua;">  Date Created:{{ repo.created_at | date}} </p>
           </div>
           
         </div>
