@@ -41,7 +41,7 @@ To fix a bug or enhance an existing module, follow these steps:
 - Push to the branch (git push origin improve-feature)
 - Create a Pull Request
 
-## [Live link]()
+## [Live link]( https://synthiakageni.github.io/Github-Search/)
 ## Known Bugs
 
 There are no known bugs.
