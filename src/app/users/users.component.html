@@ -1,7 +1,7 @@
 <div class="container">
   <ng-progress></ng-progress>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-md-5 form">
       <div class="card">
         <form action="/action_page.php">
           <label for="username">Username:</label>
@@ -14,7 +14,7 @@
     <div class="col-md 7">
       <div class="card" style="width:500px">
         <div class="card-img-overlay">
-          <h4 class="card-title">Name:{{ users.name | titlecase }} {{ users. login | titlecase}} </h4>
+          <h4 class="card-title">Name:{{ users. login}} </h4>
           <p class="card-text">number of repositories:{{ users.public_repos }}</p>
         </div>
       </div>
@@ -23,7 +23,7 @@
 
     </div>
     <div class="row">
-      <div class="col-md-3" *ngFor='let repo of myRepository.newRepository'>
+      <div class="col-md-4" *ngFor='let repo of myRepository.newRepository'>
         
         <div class="card bg-light mb-3 p-2"  style="max-width: 18rem;" >
           <div class="card-header" style="font-weight: bold;">Repository Name: {{ repo.full_name| titlecase }} </div>
