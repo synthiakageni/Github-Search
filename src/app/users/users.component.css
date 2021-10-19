@@ -1,7 +1,7 @@
-@import '~bootstrap/dist/css/bootstrap.min.css';
 .card{
+
     margin-left: 3px;
-    margin-right: 40pc;
+    margin-right: 4pc;
     background-color:gainsboro;
 }
 .des{
@@ -11,3 +11,10 @@
 .form{
     text-align: center;
 }
+.display{
+    margin: 5px;
+    box-shadow: 10px 10px 5px -1px rgba(0, 113, 128, 0.66);
+    -webkit-box-shadow: 10px 10px 5px -1px rgba(0, 128, 111, 0.66);
+    -moz-box-shadow: 10px 10px 5px -1px rgba(0, 128, 100, 0.66);
+}
+
