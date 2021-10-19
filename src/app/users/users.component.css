@@ -13,8 +13,8 @@
 }
 .display{
     margin: 5px;
-    box-shadow: 10px 10px 5px -1px rgba(0, 113, 128, 0.66);
-    -webkit-box-shadow: 10px 10px 5px -1px rgba(0, 128, 111, 0.66);
-    -moz-box-shadow: 10px 10px 5px -1px rgba(0, 128, 100, 0.66);
+    box-shadow: 10px 10px 5px -1px rgba(41, 128, 0, 0.66);
+    -webkit-box-shadow: 10px 10px 5px -1px rgba(41, 128, 0, 0.66);
+    -moz-box-shadow: 10px 10px 5px -1px rgba(51, 128, 0, 0.66);
 }
 
