@@ -23,9 +23,9 @@
 
     </div>
     <div class="row">
-      <div class="col-md-4" *ngFor='let repo of myRepository.newRepository'>
+      <div class="display" *ngFor='let repo of myRepository.newRepository'>
         
-        <div class="card bg-light mb-3 p-2"  style="max-width: 18rem;" >
+        <div class="card bg-light  "  style="max-width: 18rem;" >
           <div class="card-header" style="font-weight: bold;">Repository Name: {{ repo.full_name| titlecase }} </div>
           <div class="card-body">
             <a type="button" class="btn btn-success btn-sm" href="{{repo.html_url}}" target="_blank">Github Link </a>
