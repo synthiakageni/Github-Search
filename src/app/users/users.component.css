@@ -2,7 +2,11 @@
 
     margin-left: 3px;
     margin-right: 4pc;
-    background-color:gainsboro;
+    background-color:greenyellow;
+    margin: 5px;
+    box-shadow: 10px 10px 5px -1px rgba(41, 128, 0, 0.66);
+    -webkit-box-shadow: 10px 10px 5px -1px rgba(41, 128, 0, 0.66);
+    -moz-box-shadow: 10px 10px 5px -1px rgba(51, 128, 0, 0.66);
 }
 .des{
     font-size: larger;
@@ -13,8 +17,13 @@
 }
 .display{
     margin: 5px;
-    box-shadow: 10px 10px 5px -1px rgba(41, 128, 0, 0.66);
-    -webkit-box-shadow: 10px 10px 5px -1px rgba(41, 128, 0, 0.66);
-    -moz-box-shadow: 10px 10px 5px -1px rgba(51, 128, 0, 0.66);
+    box-shadow: 10px 10px 5px -1px greenyellow;
+    -webkit-box-shadow: 10px 10px 5px -1px greenyellow;
+    -moz-box-shadow: 10px 10px 5px -1px greenyellow;
+}
+.out{
+    color: (41, 128, 0);
+    font-style: italic;
+    
 }
 
