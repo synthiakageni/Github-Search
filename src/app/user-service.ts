@@ -65,7 +65,7 @@ export class UserService {
           this.users.description = response.description;
           this.users.created_on = response.created_on;
           this.users.login = response.login;
-          this.users.public_repository  = response.public_repository;
+          this.users.public_repos  = response.public_repos;
 
           this.users.bio = response.bio;
           this.users.name = response.name;
